@@ -185,13 +185,9 @@ RCT_EXPORT_METHOD(initWithOptions:(NSDictionary *)inputOptions)
 {
   [AWSLogger defaultLogger].logLevel = AWSLogLevelVerbose;
   NSString *userPoolId = [inputOptions objectForKey:USER_POOL_ID];
-  NSString *identityPoolId = [inputOptions objectForKey:@"identity_pool_id"];
   NSString *region = [inputOptions objectForKey:USER_POOL_REGION];
   NSString *appClientSecret = [inputOptions objectForKey:APP_CLIENT_SECRET];
   NSString *appClientId = [inputOptions objectForKey:APP_CLIENT_ID];
-  
-  
-  AWSRegionType _region = [self.helper regionTypeFromString:region];
   
   AWSServiceConfiguration *serviceConfiguration = [[AWSServiceConfiguration alloc] initWithRegion:[self.helper regionTypeFromString:region] credentialsProvider:nil];
   AWSCognitoIdentityUserPoolConfiguration *userPoolConfiguration = [[AWSCognitoIdentityUserPoolConfiguration alloc] initWithClientId:appClientId clientSecret:appClientSecret poolId:userPoolId];
