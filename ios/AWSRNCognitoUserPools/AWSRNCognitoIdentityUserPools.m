@@ -1,5 +1,5 @@
 //
-//  AWSRNCognitoIdentityUserPool.m
+//  AWSRNCognitoIdentityUserPools.m
 //  mobile
 //
 //  Created by Mike Nichols on 1/7/17.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AWSRNCognitoIdentityUserPool.h"
+#import "AWSRNCognitoIdentityUserPools.h"
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
@@ -16,7 +16,7 @@
 
 #import "AWSRNHelper.h"
 
-@interface AWSRNCognitoIdentityUserPool() 
+@interface AWSRNCognitoIdentityUserPools() 
 
 @property (nonatomic, strong) AWSRNHelper *helper;
 @property (nonatomic, strong) AWSCognitoIdentityUserPool *currentPool;
@@ -34,7 +34,7 @@
 
 
 
-@implementation AWSRNCognitoIdentityUserPool
+@implementation AWSRNCognitoIdentityUserPools
 
 static NSString *const USER_POOL_ID = @"user_pool_id";
 static NSString *const USER_POOL_REGION = @"region";
@@ -42,18 +42,18 @@ static NSString *const APP_CLIENT_ID = @"app_client_id";
 static NSString *const APP_CLIENT_SECRET = @"app_client_secret";
 
 // Notification/Event Names
-static NSString *const ERROR_EVENT = @"AWSRNCognitoIdentityUserPool/error";
-static NSString *const MFA_CODE_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPool/mfaCodeRequired";
-static NSString *const MFA_CODE_SENT_EVENT = @"AWSRNCognitoIdentityUserPool/mfaCodeSent";
-static NSString *const USER_POOL_INITIALIZED_EVENT = @"AWSRNCognitoIdentityUserPool/userPoolInitialized";
-static NSString *const USER_POOL_CLEARED_ALL_EVENT = @"AWSRNCognitoIdentityUserPool/userPoolClearedAll";
-static NSString *const USER_AUTHENTICATED_EVENT = @"AWSRNCognitoIdentityUserPool/userAuthenticated";
-static NSString *const SIGN_UP_CONFIRMATION_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPool/signUpConfirmationRequired";
-static NSString *const SIGN_UP_CONFIRMED_EVENT = @"AWSRNCognitoIdentityUserPool/signUpConfirmed";
-static NSString *const SIGN_UP_CODE_RESENT_EVENT = @"AWSRNCognitoIdentityUserPool/signUpCodeResent";
-static NSString *const DEVICE_STATUS_NOT_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPool/deviceStatusNotRemembered";
-static NSString *const DEVICE_STATUS_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPool/deviceStatusRemembered";
-static NSString *const DEVICE_FORGOTTEN_EVENT = @"AWSRNCognitoIdentityUserPool/deviceForgotten";
+static NSString *const ERROR_EVENT = @"AWSRNCognitoIdentityUserPools/error";
+static NSString *const MFA_CODE_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPools/mfaCodeRequired";
+static NSString *const MFA_CODE_SENT_EVENT = @"AWSRNCognitoIdentityUserPools/mfaCodeSent";
+static NSString *const USER_POOL_INITIALIZED_EVENT = @"AWSRNCognitoIdentityUserPools/userPoolInitialized";
+static NSString *const USER_POOL_CLEARED_ALL_EVENT = @"AWSRNCognitoIdentityUserPools/userPoolClearedAll";
+static NSString *const USER_AUTHENTICATED_EVENT = @"AWSRNCognitoIdentityUserPools/userAuthenticated";
+static NSString *const SIGN_UP_CONFIRMATION_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPools/signUpConfirmationRequired";
+static NSString *const SIGN_UP_CONFIRMED_EVENT = @"AWSRNCognitoIdentityUserPools/signUpConfirmed";
+static NSString *const SIGN_UP_CODE_RESENT_EVENT = @"AWSRNCognitoIdentityUserPools/signUpCodeResent";
+static NSString *const DEVICE_STATUS_NOT_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPools/deviceStatusNotRemembered";
+static NSString *const DEVICE_STATUS_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPools/deviceStatusRemembered";
+static NSString *const DEVICE_FORGOTTEN_EVENT = @"AWSRNCognitoIdentityUserPools/deviceForgotten";
 
 @synthesize bridge = _bridge;
 
@@ -191,7 +191,7 @@ RCT_EXPORT_METHOD(initWithOptions:(NSDictionary *)inputOptions)
   
   AWSServiceConfiguration *serviceConfiguration = [[AWSServiceConfiguration alloc] initWithRegion:[self.helper regionTypeFromString:region] credentialsProvider:nil];
   AWSCognitoIdentityUserPoolConfiguration *userPoolConfiguration = [[AWSCognitoIdentityUserPoolConfiguration alloc] initWithClientId:appClientId clientSecret:appClientSecret poolId:userPoolId];
-  
+
   [AWSCognitoIdentityUserPool registerCognitoIdentityUserPoolWithConfiguration:serviceConfiguration userPoolConfiguration:userPoolConfiguration forKey:@"UserPool"];
   self.currentPool = [AWSCognitoIdentityUserPool CognitoIdentityUserPoolForKey:@"UserPool"];
   self.currentPool.delegate = self;
