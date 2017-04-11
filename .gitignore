@@ -60,4 +60,8 @@ fastlane/screenshots
 
 .serverless
 
+# no podfile downloads
 Pods/
+ # no tarballs or extracted archives
+*.tgz
+package/
