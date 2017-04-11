@@ -62,5 +62,5 @@ fastlane/screenshots
 
 # no podfile downloads
 Pods/
-
-*.tgz # no tarballs
+ # no tarballs
+*.tgz
