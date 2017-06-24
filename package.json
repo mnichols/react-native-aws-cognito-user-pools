@@ -2,12 +2,17 @@
 	"name": "react-native-aws-cognito-user-pools",
 	"version": "0.0.1",
 	"private": true,
+	"main": "./src/index.js",
 	"scripts": {
 		"start": "",
 		"test": ""
 	},
 	"dependencies": {
-		"react": "~15.4.1",
+		"EventEmitter": "^1.0.0",
+		"react": "^15.5.4",
+		"react-native": "^0.44.0"
+	},
+	"peerDependencies": {
 		"react-native": "0.42.3"
 	},
 	"devDependencies": {

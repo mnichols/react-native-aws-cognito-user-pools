@@ -8,6 +8,9 @@ import CognitoError from './cognito-error.js'
 
 const AWSRNCognitoUserPools = NativeModules.AWSRNCognitoUserPools
 
+if (!AWSRNCognitoUserPools) {
+    throw new Error('could not locate `AWSRNCognitoUserPools` module.')
+}
 export const ERROR                         = AWSRNCognitoUserPools.ERROR
 export const MFA_CODE_REQUIRED             = AWSRNCognitoUserPools.MFA_CODE_REQUIRED
 export const MFA_CODE_SENT                 = AWSRNCognitoUserPools.MFA_CODE_SENT
