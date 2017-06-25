@@ -1,5 +1,5 @@
 //
-//  AWSRNCognitoIdentityUserPools.m
+//  AWSRNCognitoUserPools.m
 //  mobile
 //
 //  Created by Mike Nichols on 1/7/17.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AWSRNCognitoIdentityUserPools.h"
+#import "AWSRNCognitoUserPools.h"
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
@@ -16,7 +16,7 @@
 
 #import "AWSRNHelper.h"
 
-@interface AWSRNCognitoIdentityUserPools() 
+@interface AWSRNCognitoUserPools() 
 
 @property (nonatomic, strong) AWSRNHelper *helper;
 @property (nonatomic, strong) AWSCognitoIdentityUserPool *currentPool;
@@ -34,7 +34,7 @@
 
 
 
-@implementation AWSRNCognitoIdentityUserPools
+@implementation AWSRNCognitoUserPools
 
 static NSString *const USER_POOL_ID = @"user_pool_id";
 static NSString *const USER_POOL_REGION = @"region";
@@ -42,22 +42,22 @@ static NSString *const APP_CLIENT_ID = @"app_client_id";
 static NSString *const APP_CLIENT_SECRET = @"app_client_secret";
 
 // Notification/Event Names
-static NSString *const ERROR_EVENT = @"AWSRNCognitoIdentityUserPools/error";
-static NSString *const MFA_CODE_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPools/mfaCodeRequired";
-static NSString *const MFA_CODE_SENT_EVENT = @"AWSRNCognitoIdentityUserPools/mfaCodeSent";
-static NSString *const USER_POOL_INITIALIZED_EVENT = @"AWSRNCognitoIdentityUserPools/userPoolInitialized";
-static NSString *const USER_POOL_CLEARED_ALL_EVENT = @"AWSRNCognitoIdentityUserPools/userPoolClearedAll";
-static NSString *const USER_AUTHENTICATED_EVENT = @"AWSRNCognitoIdentityUserPools/userAuthenticated";
-static NSString *const SIGN_UP_CONFIRMATION_REQUIRED_EVENT = @"AWSRNCognitoIdentityUserPools/signUpConfirmationRequired";
-static NSString *const SIGN_UP_CONFIRMED_EVENT = @"AWSRNCognitoIdentityUserPools/signUpConfirmed";
-static NSString *const SIGN_UP_CODE_RESENT_EVENT = @"AWSRNCognitoIdentityUserPools/signUpCodeResent";
-static NSString *const DEVICE_STATUS_NOT_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPools/deviceStatusNotRemembered";
-static NSString *const DEVICE_STATUS_REMEMBERED_EVENT = @"AWSRNCognitoIdentityUserPools/deviceStatusRemembered";
-static NSString *const DEVICE_FORGOTTEN_EVENT = @"AWSRNCognitoIdentityUserPools/deviceForgotten";
+static NSString *const ERROR_EVENT = @"AWSRNCognitoUserPools/error";
+static NSString *const MFA_CODE_REQUIRED_EVENT = @"AWSRNCognitoUserPools/mfaCodeRequired";
+static NSString *const MFA_CODE_SENT_EVENT = @"AWSRNCognitoUserPools/mfaCodeSent";
+static NSString *const USER_POOL_INITIALIZED_EVENT = @"AWSRNCognitoUserPools/userPoolInitialized";
+static NSString *const USER_POOL_CLEARED_ALL_EVENT = @"AWSRNCognitoUserPools/userPoolClearedAll";
+static NSString *const USER_AUTHENTICATED_EVENT = @"AWSRNCognitoUserPools/userAuthenticated";
+static NSString *const SIGN_UP_CONFIRMATION_REQUIRED_EVENT = @"AWSRNCognitoUserPools/signUpConfirmationRequired";
+static NSString *const SIGN_UP_CONFIRMED_EVENT = @"AWSRNCognitoUserPools/signUpConfirmed";
+static NSString *const SIGN_UP_CODE_RESENT_EVENT = @"AWSRNCognitoUserPools/signUpCodeResent";
+static NSString *const DEVICE_STATUS_NOT_REMEMBERED_EVENT = @"AWSRNCognitoUserPools/deviceStatusNotRemembered";
+static NSString *const DEVICE_STATUS_REMEMBERED_EVENT = @"AWSRNCognitoUserPools/deviceStatusRemembered";
+static NSString *const DEVICE_FORGOTTEN_EVENT = @"AWSRNCognitoUserPools/deviceForgotten";
 
 @synthesize bridge = _bridge;
 
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(@"AWSRNCognitoUserPools");
 
 -(instancetype)init{
   self = [super init];

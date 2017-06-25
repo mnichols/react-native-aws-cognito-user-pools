@@ -31,9 +31,7 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B246B93F1EFF2EB70042C3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B93C1EFF2EB70042C3B2 /* AppDelegate.m */; };
-		B246B9401EFF2EB70042C3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B93E1EFF2EB70042C3B2 /* main.m */; };
-		B26D28BA1E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28B91E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.m */; };
+		B246B9A41EFF376B0042C3B2 /* AWSRNCognitoUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */; };
 		B26D28D61E8F1DBC005FBFE7 /* AWSRNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */; };
 		F8AEED4C4F78902AD3146914 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */; };
 /* End PBXBuildFile section */
@@ -255,11 +253,8 @@
 		9E8D58CBD4FA46C9560A0553 /* Pods_AWSRNCognitoUserPoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSRNCognitoUserPoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C9FFDE66038FB5D13E20AC /* Pods-AWSRNCognitoUserPools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPools/Pods-AWSRNCognitoUserPools.debug.xcconfig"; sourceTree = "<group>"; };
 		AF5DF88D36D1A04C05F1F7D6 /* Pods-AWSRNCognitoUserPoolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPoolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPoolsTests/Pods-AWSRNCognitoUserPoolsTests.release.xcconfig"; sourceTree = "<group>"; };
-		B246B93C1EFF2EB70042C3B2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B246B93D1EFF2EB70042C3B2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B246B93E1EFF2EB70042C3B2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B26D28B81E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNCognitoIdentityUserPools.h; path = AWSRNCognitoUserPools/AWSRNCognitoIdentityUserPools.h; sourceTree = "<group>"; };
-		B26D28B91E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSRNCognitoIdentityUserPools.m; path = AWSRNCognitoUserPools/AWSRNCognitoIdentityUserPools.m; sourceTree = "<group>"; };
+		B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSRNCognitoUserPools.m; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.m; sourceTree = "<group>"; };
+		B246B9A31EFF376B0042C3B2 /* AWSRNCognitoUserPools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNCognitoUserPools.h; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.h; sourceTree = "<group>"; };
 		B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNHelper.h; path = AWSRNCognitoUserPools/AWSRNHelper.h; sourceTree = "<group>"; };
 		B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSRNHelper.m; path = AWSRNCognitoUserPools/AWSRNHelper.m; sourceTree = "<group>"; };
 		CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSRNCognitoUserPools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,13 +377,10 @@
 		13B07FAE1A68108700A75B9A /* AWSRNCognitoUserPools */ = {
 			isa = PBXGroup;
 			children = (
-				B246B93C1EFF2EB70042C3B2 /* AppDelegate.m */,
-				B246B93D1EFF2EB70042C3B2 /* AppDelegate.h */,
-				B246B93E1EFF2EB70042C3B2 /* main.m */,
+				B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */,
+				B246B9A31EFF376B0042C3B2 /* AWSRNCognitoUserPools.h */,
 				B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */,
 				B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */,
-				B26D28B81E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.h */,
-				B26D28B91E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -1018,10 +1010,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B26D28BA1E8F1D7A005FBFE7 /* AWSRNCognitoIdentityUserPools.m in Sources */,
 				B26D28D61E8F1DBC005FBFE7 /* AWSRNHelper.m in Sources */,
-				B246B9401EFF2EB70042C3B2 /* main.m in Sources */,
-				B246B93F1EFF2EB70042C3B2 /* AppDelegate.m in Sources */,
+				B246B9A41EFF376B0042C3B2 /* AWSRNCognitoUserPools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

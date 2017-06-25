@@ -1,19 +1,19 @@
 //
-//  AWSRNCognitoIdentityUserPools.h
+//  AWSRNCognitoUserPools.h
 //  mobile
 //
 //  Created by Mike Nichols on 1/7/17.
 //  Copyright © 2017 Facebook. All rights reserved.
 //
 
-#ifndef AWSRNCognitoIdentityUserPools_h
-#define AWSRNCognitoIdentityUserPools_h
+#ifndef AWSRNCognitoUserPools_h
+#define AWSRNCognitoUserPools_h
 
 #import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
 #import <AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.h>
 
-@interface AWSRNCognitoIdentityUserPools: RCTEventEmitter <
+@interface AWSRNCognitoUserPools: RCTEventEmitter <
 RCTBridgeModule,
 AWSCognitoIdentityInteractiveAuthenticationDelegate,
 AWSCognitoIdentityPasswordAuthentication,
@@ -25,4 +25,4 @@ AWSCognitoIdentityRememberDevice
 @end
 
 
-#endif /* AWSRNCognitoIdentityUserPools_h */
+#endif /* AWSRNCognitoUserPools_h */
