@@ -8,20 +8,14 @@
 		"test": ""
 	},
 	"dependencies": {
-		"EventEmitter": "^1.0.0",
+		"EventEmitter": "^1.0.0"
+	},
+	"peerDependencies": {
 		"react": "^15.5.4",
 		"react-native": "^0.44.0"
 	},
-	"peerDependencies": {
-		"react-native": "0.42.3"
-	},
 	"devDependencies": {
-		"babel-jest": "19.0.0",
 		"babel-preset-react-native": "1.9.1",
-		"jest": "19.0.2",
 		"react-test-renderer": "~15.4.1"
-	},
-	"jest": {
-		"preset": "react-native"
 	}
 }
