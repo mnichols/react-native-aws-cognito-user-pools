@@ -10,7 +10,6 @@
 		4F84E8E84335C53757D93C47 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */; };
 		B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */; };
 		B206EA061F0E05ED00AB1389 /* AWSRNHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */; };
-		B2C4695B1F12E13300A38D11 /* AWSRNCognitoUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -730,7 +729,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C4695B1F12E13300A38D11 /* AWSRNCognitoUserPools.m in Sources */,
 				B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
