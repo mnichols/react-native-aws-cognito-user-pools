@@ -832,7 +832,10 @@
 					"$(SRCROOT)/Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -852,7 +855,10 @@
 					"$(SRCROOT)/Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
