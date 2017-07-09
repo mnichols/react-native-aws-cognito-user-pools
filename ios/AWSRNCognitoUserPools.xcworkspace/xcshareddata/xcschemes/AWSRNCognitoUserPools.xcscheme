@@ -51,6 +51,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B206E9FB1F0E056F00AB1389"
+            BuildableName = "libAWSRNCognitoUserPools.a"
+            BlueprintName = "AWSRNCognitoUserPools"
+            ReferencedContainer = "container:AWSRNCognitoUserPools.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

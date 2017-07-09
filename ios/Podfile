@@ -11,9 +11,4 @@ target 'AWSRNCognitoUserPools' do
   pod 'AWSCore', '~> 2.5.2'
   pod 'AWSCognitoIdentityProvider', '~> 2.5.2'
 
-  target 'AWSRNCognitoUserPoolsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

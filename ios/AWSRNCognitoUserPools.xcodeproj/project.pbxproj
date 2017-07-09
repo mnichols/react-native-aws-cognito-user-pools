@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F84E8E84335C53757D93C47 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */; };
 		B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */; };
 		B206EA061F0E05ED00AB1389 /* AWSRNHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */; };
+		B2C4695B1F12E13300A38D11 /* AWSRNCognitoUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F84E8E84335C53757D93C47 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B206EA021F0E056F00AB1389 /* Build configuration list for PBXNativeTarget "AWSRNCognitoUserPools" */;
 			buildPhases = (
+				2E3BEA3D30436B69725A19F8 /* [CP] Check Pods Manifest.lock */,
 				B206E9F81F0E056F00AB1389 /* Sources */,
 				B206E9F91F0E056F00AB1389 /* Frameworks */,
 				B206E9FA1F0E056F00AB1389 /* CopyFiles */,
+				0722B27259503BC545BBF61E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -687,11 +692,45 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0722B27259503BC545BBF61E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSRNCognitoUserPools/Pods-AWSRNCognitoUserPools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E3BEA3D30436B69725A19F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B206E9F81F0E056F00AB1389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C4695B1F12E13300A38D11 /* AWSRNCognitoUserPools.m in Sources */,
 				B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,6 +823,7 @@
 		};
 		B206EA031F0E056F00AB1389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C9FFDE66038FB5D13E20AC /* Pods-AWSRNCognitoUserPools.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -802,6 +842,7 @@
 		};
 		B206EA041F0E056F00AB1389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4D0D5148F60F823145E431 /* Pods-AWSRNCognitoUserPools.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
