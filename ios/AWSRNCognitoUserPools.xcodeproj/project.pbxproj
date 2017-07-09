@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B206EA001F0E056F00AB1389 /* AWSRNCognitoUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B206E9FF1F0E056F00AB1389 /* AWSRNCognitoUserPools.m */; };
-		B206EA011F0E056F00AB1389 /* AWSRNCognitoUserPools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B206E9FE1F0E056F00AB1389 /* AWSRNCognitoUserPools.h */; };
 		B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */; };
 		B206EA061F0E05ED00AB1389 /* AWSRNHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */; };
 /* End PBXBuildFile section */
@@ -199,7 +197,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				B206EA061F0E05ED00AB1389 /* AWSRNHelper.h in CopyFiles */,
-				B206EA011F0E056F00AB1389 /* AWSRNCognitoUserPools.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +210,6 @@
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		3A9B5CAB0187A74B04942ABD /* Pods-AWSRNCognitoUserPoolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPoolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPoolsTests/Pods-AWSRNCognitoUserPoolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4D0D5148F60F823145E431 /* Pods-AWSRNCognitoUserPools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPools.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPools/Pods-AWSRNCognitoUserPools.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,8 +220,6 @@
 		A2C9FFDE66038FB5D13E20AC /* Pods-AWSRNCognitoUserPools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPools/Pods-AWSRNCognitoUserPools.debug.xcconfig"; sourceTree = "<group>"; };
 		AF5DF88D36D1A04C05F1F7D6 /* Pods-AWSRNCognitoUserPoolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPoolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPoolsTests/Pods-AWSRNCognitoUserPoolsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B206E9FC1F0E056F00AB1389 /* libAWSRNCognitoUserPools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSRNCognitoUserPools.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B206E9FE1F0E056F00AB1389 /* AWSRNCognitoUserPools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSRNCognitoUserPools.h; sourceTree = "<group>"; };
-		B206E9FF1F0E056F00AB1389 /* AWSRNCognitoUserPools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSRNCognitoUserPools.m; sourceTree = "<group>"; };
 		B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSRNCognitoUserPools.m; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.m; sourceTree = "<group>"; };
 		B246B9A31EFF376B0042C3B2 /* AWSRNCognitoUserPools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNCognitoUserPools.h; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.h; sourceTree = "<group>"; };
 		B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNHelper.h; path = AWSRNCognitoUserPools/AWSRNHelper.h; sourceTree = "<group>"; };
@@ -400,7 +394,6 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* AWSRNCognitoUserPools */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				B206E9FD1F0E056F00AB1389 /* AWSRNCognitoUserPools */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2B0B9B90C72853483400AE2A /* Pods */,
 				2CFA6167C215AF91C41641B4 /* Frameworks */,
@@ -415,16 +408,6 @@
 				B206E9FC1F0E056F00AB1389 /* libAWSRNCognitoUserPools.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B206E9FD1F0E056F00AB1389 /* AWSRNCognitoUserPools */ = {
-			isa = PBXGroup;
-			children = (
-				13B07FB61A68108700A75B9A /* Info.plist */,
-				B206E9FE1F0E056F00AB1389 /* AWSRNCognitoUserPools.h */,
-				B206E9FF1F0E056F00AB1389 /* AWSRNCognitoUserPools.m */,
-			);
-			path = AWSRNCognitoUserPools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,7 +693,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */,
-				B206EA001F0E056F00AB1389 /* AWSRNCognitoUserPools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +789,10 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Pods/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -822,6 +808,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Pods/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -848,6 +838,7 @@
 				B206EA041F0E056F00AB1389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
