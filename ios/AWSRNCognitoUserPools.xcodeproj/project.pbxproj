@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F84E8E84335C53757D93C47 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */; };
+		A1FE78AFB8A0FB6FA50C625E /* Pods_AWSRNCognitoUserPools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */; };
 		B206EA051F0E05AA00AB1389 /* AWSRNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D28D51E8F1DBC005FBFE7 /* AWSRNHelper.m */; };
 		B206EA061F0E05ED00AB1389 /* AWSRNHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */; };
-		B22A47661F13184800FE7D37 /* libAWSRNCognitoUserPools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B206E9FC1F0E056F00AB1389 /* libAWSRNCognitoUserPools.a */; };
+		B21A616D1F1C26010054213C /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A616C1F1C26010054213C /* AWSCognitoIdentityProvider.framework */; };
+		B21A616F1F1C26050054213C /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A616E1F1C26050054213C /* AWSCore.framework */; };
 		B2A877121F12EA53007AE354 /* AWSRNCognitoUserPools.m in Sources */ = {isa = PBXBuildFile; fileRef = B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		9E8D58CBD4FA46C9560A0553 /* Pods_AWSRNCognitoUserPoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSRNCognitoUserPoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C9FFDE66038FB5D13E20AC /* Pods-AWSRNCognitoUserPools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRNCognitoUserPools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRNCognitoUserPools/Pods-AWSRNCognitoUserPools.debug.xcconfig"; sourceTree = "<group>"; };
 		B206E9FC1F0E056F00AB1389 /* libAWSRNCognitoUserPools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWSRNCognitoUserPools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21A616C1F1C26010054213C /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = "../../../Library/Developer/Xcode/DerivedData/AWSRNCognitoUserPools-flppnfjqlhwhcaalwtaxreatmpxw/Build/Products/Debug-iphonesimulator/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"; sourceTree = "<group>"; };
+		B21A616E1F1C26050054213C /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../../../Library/Developer/Xcode/DerivedData/AWSRNCognitoUserPools-flppnfjqlhwhcaalwtaxreatmpxw/Build/Products/Debug-iphonesimulator/AWSCore/AWSCore.framework"; sourceTree = "<group>"; };
 		B246B9A21EFF376B0042C3B2 /* AWSRNCognitoUserPools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSRNCognitoUserPools.m; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.m; sourceTree = "<group>"; };
 		B246B9A31EFF376B0042C3B2 /* AWSRNCognitoUserPools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNCognitoUserPools.h; path = AWSRNCognitoUserPools/AWSRNCognitoUserPools.h; sourceTree = "<group>"; };
 		B26D28D41E8F1DBC005FBFE7 /* AWSRNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSRNHelper.h; path = AWSRNCognitoUserPools/AWSRNHelper.h; sourceTree = "<group>"; };
@@ -44,8 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22A47661F13184800FE7D37 /* libAWSRNCognitoUserPools.a in Frameworks */,
-				4F84E8E84335C53757D93C47 /* Pods_AWSRNCognitoUserPools.framework in Frameworks */,
+				A1FE78AFB8A0FB6FA50C625E /* Pods_AWSRNCognitoUserPools.framework in Frameworks */,
+				B21A616D1F1C26010054213C /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				B21A616F1F1C26050054213C /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,8 @@
 		2CFA6167C215AF91C41641B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B21A616E1F1C26050054213C /* AWSCore.framework */,
+				B21A616C1F1C26010054213C /* AWSCognitoIdentityProvider.framework */,
 				CB15D350EE183D26762B2D33 /* Pods_AWSRNCognitoUserPools.framework */,
 				9E8D58CBD4FA46C9560A0553 /* Pods_AWSRNCognitoUserPoolsTests.framework */,
 			);
